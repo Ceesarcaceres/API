@@ -1,8 +1,57 @@
 ﻿@{
     ViewData["Title"] = "Customer";
 }
-
 <h1>Customer</h1>
-
 <input type="submit" id="ConnectAPI" onclick="ConnectToAPI()" value="Inject" class="btn btn-dark btn-sm" />
-<input type="text" id ="txtName" onclick="Inserir()"/>
+<input type="text" id="txtName" onclick="Inserir()" />
+@*<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <label asp-for="Nome" class="control-label"></label>
+            <input asp-for="Nome" id="nome" class="form-control" />
+            <span asp-validation-for="Nome" class="text-danger"></span>
+        </div>
+        <div class="col-sm-3">
+            <label asp-for="CPF" class="control-label"></label>
+            <input asp-for="CPF" id="CPF" class="form-control" />
+            <span asp-validation-for="CPF" class="text-danger"></span>
+        </div>
+        <div class="col-sm-3">
+            <label asp-for="CEP" class="control-label"></label>
+            <input asp-for="CEP" id="txtCEP" class="form-control" placeholder="Digite um CEP Válido" />
+            <span asp-validation-for="CEP" class="text-danger"></span>
+            <div class=""><input type="submit" onclick="BuscarCep()" value="Buscar" class="btn btn-dark btn-sm" /></div>
+        </div>
+        <div class="col-sm-5">
+            <label asp-for="Logradouro" class="control-label"></label>
+            <input asp-for="Logradouro" class="form-control" />
+            <span asp-validation-for="Logradouro" class="text-danger"></span>
+        </div>
+        <div class="col-sm-2">
+            <label asp-for="Numero" class="control-label"></label>
+            <input asp-for="Numero" class="form-control" />
+            <span asp-validation-for="Numero" class="text-danger"></span>
+        </div>
+        <div class="col-sm-5">
+            <label asp-for="Bairro" class="control-label"></label>
+            <input asp-for="Bairro" class="form-control" />
+            <span asp-validation-for="Bairro" class="text-danger"></span>
+        </div>
+        <div class="col-sm-3">
+            <label asp-for="Cidade" class="control-label"></label>
+            <input asp-for="Cidade" class="form-control" />
+            <span asp-validation-for="Cidade" class="text-danger"></span>
+        </div>
+
+        <div class="col-sm-3">
+            <label asp-for="Email" class="control-label"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="col-sm-3">
+            <label asp-for="Telefone" class="control-label"></label>
+            <input asp-for="Telefone" class="form-control" />
+            <span asp-validation-for="Telefone" class="text-danger"></span>
+        </div>
+    </div>
+</div>*@

@@ -1,22 +1,6 @@
 ﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
-
 // Write your JavaScript code.
-
-//$(document).ready(function () {
-//    ConnectToAPI()
-//});
-
-//function ConnectToAPI() {
-//    $.ajax({
-//        type: 'POST',
-//        url: 'http://localhost:56243/api/customer',
-//        dataType: 'json',
-//        success: function (data) {
-//            console.log(data);
-//        }
-//    });
-//}
 function ConnectToAPI() {
     $.ajax({
         type: 'GET',
@@ -34,42 +18,43 @@ function ConnectToAPI() {
         }
     });
 }
-    function Inserir() {
-        var data = {
-            Name: $("#txtName").val(),
-        }
-        $.ajax({
-            type: 'POST',
-            url: 'http://localhost:56243/api/customer',
-            data: JSON.stringify(data),
-            contentType: 'application/json; charset=utf-8',
-            dataType: 'json',
-            beforeSend: function () {
-                console.log(Ok);
-            },
-            success: function (response) {
-                console.log(response);
-            },
-            error: function (error) {
-                console.log(error);
-            }
-        });
+function Inserir() {
+    var data = {
+        Name: $("#txtName").val(),
+
     }
+    $.ajax({
+        type: 'POST',
+        url: 'http://localhost:56243/api/customer',
+        data: JSON.stringify(data),
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        beforeSend: function () {
+
+        },
+        success: function (response) {
+            console.log(response);
+        },
+        error: function (error) {
+            console.log(error);
+        }
+    });
+}
+//$(document).ready(function () {
+//    ConnectToAPI()
+//});
 //$.get("ajax/CustomerController.cs", function (data) {
 //    $(".result").html(data);
 //    alert("Load was performed.");
 //});
-
 //    $.ajax({
 //        method: "POST",
 //        url: "Customer.js",
 //        data: { nome: "Pedro", email: "pedro@email.com" }
 //    })
-
 //    $(document).ready(function () {
 //    let endpoint = 'api/[controller]'
 //    $(".content a").each(function (index, element) {
-
 //        $.ajax({
 //            url: endpoint + "&q=" + $(this).text(),
 //            contentType: "application/json",
@@ -80,7 +65,6 @@ function ConnectToAPI() {
 //        })
 //    });
 //});
-
 //$.ajax({
 //    // edit to add steve's suggestion.
 //    url: "/CustomerController/ActionResult",
@@ -88,11 +72,9 @@ function ConnectToAPI() {
 //    success: function (data) {
 //        // your data could be a View or Json or what ever you returned in your action method 
 //        // parse your data here
-//        alert(data);
-        
+//        alert(data);   
 //    }
 //});
-
         //$(document).ready(function () {
         //    $.ajax({
         //        url: '@Url.Action("Customer", "Customer")',
@@ -104,14 +86,12 @@ function ConnectToAPI() {
         //        }
         //    });
         //});
-
 //var url = '@Url.Action("GetData")';
 //$.ajax({
 //    url: url,
 //    type: 'GET',
 //    cache: false,
 //    data: { value: strId },
-
 //    success: function (result) {
 //        $('#result').html(result);
 //    }
@@ -122,7 +102,6 @@ function ConnectToAPI() {
 //        alert("success");
 //    }
 //});
-
 //$(function () {
 //    $("#btnGet").click(function () {
 //        $.ajax({
