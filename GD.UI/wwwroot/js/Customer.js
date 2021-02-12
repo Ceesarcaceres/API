@@ -40,6 +40,17 @@ function Inserir() {
         }
     });
 }
+//const mongo = require('mongodb').MongoClient;
+//const url = 'mongodb://localhost:27017';
+//const dbName = 'Estudo';
+//const client = new mongo(url);
+//client.connect(function (err) {
+//    assert.equal(null, err);
+//    console.log("Connected successfully to server");
+//    const db = client.db(dbName);
+//    client.close();
+//});
+
 //$(document).ready(function () {
 //    ConnectToAPI()
 //});
