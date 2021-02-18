@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GD.API.Model;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -21,6 +22,13 @@ namespace GD.API
             Configuration = configuration;
         }
 
+        public class Settings
+        {
+            public string ConnectionString;
+            public string Database;
+
+        }
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -31,6 +39,13 @@ namespace GD.API
             {           builder.AllowAnyOrigin()
                        .AllowAnyMethod()
                        .AllowAnyHeader();
+
+                //services.Configure<Settings>(options => { 
+                //options.ConnectionString
+                //  = Configuration.GetSection("MongoConnection:ConnectionString").Value;
+                //options.Database
+                //  = Configuration.GetSection("MongoConnection:Database").Value;});
+
             }));
         }
 

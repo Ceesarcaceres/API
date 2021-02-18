@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using MongoDB.Driver;
 
 namespace GD.UI
 {
@@ -15,6 +16,8 @@ namespace GD.UI
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
+            //var connectionString = "mongodb://localhost:27017";
+            //var client = new MongoClient(connectionString);
         }
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>

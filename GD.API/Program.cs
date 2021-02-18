@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using MongoDB.Driver;
 
 namespace GD.API
 {
@@ -22,3 +23,4 @@ namespace GD.API
                 .UseStartup<Startup>();
     }
 }
+
